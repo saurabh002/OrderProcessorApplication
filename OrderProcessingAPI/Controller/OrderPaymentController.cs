@@ -1,46 +1,38 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using Microsoft.AspNetCore.Mvc;
+using OrderProcessingAPI.Core.Interfaces;
+using System;
+using System.Net;
 using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
 namespace OrderProcessingAPI
 {
-    [Route("api/[controller]")]
-    public class OrderPaymentController : Controller
+    [ApiController]
+    [Route("[controller]")]
+    public class OrderPaymentController : ControllerBase
     {
-        // GET: api/<controller>
-        [HttpGet]
-        public IEnumerable<string> Get()
+        IOrderPaymentProcessorService _orderPaymentProcessorService;
+        public OrderPaymentController(IOrderPaymentProcessorService orderPaymentProcessorService)
         {
-            return new string[] { "value1", "value2" };
+            _orderPaymentProcessorService = orderPaymentProcessorService;
         }
 
-        // GET api/<controller>/5
-        [HttpGet("{id}")]
-        public string Get(int id)
-        {
-            return "value";
-        }
-
-        // POST api/<controller>
         [HttpPost]
-        public void Post([FromBody]string value)
+        public async Task<IActionResult> ProcessPayment(string processor)
         {
+            try
+            {
+                var response = await _orderPaymentProcessorService.ProcessPayment(processor);
+
+                return Ok(response);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode((int)HttpStatusCode.InternalServerError, ex.Message);
+            }
         }
 
-        // PUT api/<controller>/5
-        [HttpPut("{id}")]
-        public void Put(int id, [FromBody]string value)
-        {
-        }
-
-        // DELETE api/<controller>/5
-        [HttpDelete("{id}")]
-        public void Delete(int id)
-        {
-        }
     }
+
 }

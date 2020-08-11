@@ -4,4 +4,14 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.5.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\OrderProcecssingAPI.Business\OrderProcecssingAPI.Processor.csproj" />
+    <ProjectReference Include="..\OrderProcessingAPI.Core\OrderProcessingAPI.Core.csproj" />
+    <ProjectReference Include="..\OrderProcessingAPI.Service\OrderProcessingAPI.Service.csproj" />
+  </ItemGroup>
+
 </Project>

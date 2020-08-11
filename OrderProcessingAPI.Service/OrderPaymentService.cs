@@ -4,17 +4,18 @@ using System.Threading.Tasks;
 
 namespace OrderProcessingAPI.Service
 {
-    public class OrderPaymentService
+    public class OrderPaymentService: IOrderPaymentProcessorService
     {
-        IOrderPaymentProcessor _orderPaymentProcessor;
-        public OrderPaymentService(IOrderPaymentProcessor orderPaymentProcessor)
+        IOrderPaymentProcessorFactory _paymentFactory;
+        public OrderPaymentService(IOrderPaymentProcessorFactory paymentFactory)
         {
-            _orderPaymentProcessor = orderPaymentProcessor;
+            _paymentFactory = paymentFactory;
         }
 
-        public async Task<string> ProcessPayment()
+        public async Task<string> ProcessPayment(string processor)
         {
-            return await _orderPaymentProcessor.ProcessPayment();
+            var paymentProcessor = _paymentFactory.GetPaymentProcessor(processor);
+            return await paymentProcessor.ProcessPayment();
         }
     }
 }

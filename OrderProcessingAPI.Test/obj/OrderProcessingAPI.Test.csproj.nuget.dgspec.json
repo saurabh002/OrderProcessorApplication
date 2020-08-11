@@ -4,14 +4,70 @@
     "C:\\Users\\me_ri\\source\\repos\\OrderProcessAPI\\OrderProcessingAPI.Test\\OrderProcessingAPI.Test.csproj": {}
   },
   "projects": {
-    "C:\\Users\\me_ri\\source\\repos\\OrderProcessAPI\\OrderProcessingAPI.Test\\OrderProcessingAPI.Test.csproj": {
+    "C:\\Users\\me_ri\\source\\repos\\OrderProcessAPI\\OrderProcecssingAPI.Business\\OrderProcecssingAPI.Processor.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\me_ri\\source\\repos\\OrderProcessAPI\\OrderProcessingAPI.Test\\OrderProcessingAPI.Test.csproj",
-        "projectName": "OrderProcessingAPI.Test",
-        "projectPath": "C:\\Users\\me_ri\\source\\repos\\OrderProcessAPI\\OrderProcessingAPI.Test\\OrderProcessingAPI.Test.csproj",
+        "projectUniqueName": "C:\\Users\\me_ri\\source\\repos\\OrderProcessAPI\\OrderProcecssingAPI.Business\\OrderProcecssingAPI.Processor.csproj",
+        "projectName": "OrderProcecssingAPI.Processor",
+        "projectPath": "C:\\Users\\me_ri\\source\\repos\\OrderProcessAPI\\OrderProcecssingAPI.Business\\OrderProcecssingAPI.Processor.csproj",
         "packagesPath": "C:\\Users\\me_ri\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\me_ri\\source\\repos\\OrderProcessAPI\\OrderProcessingAPI.Test\\obj\\",
+        "outputPath": "C:\\Users\\me_ri\\source\\repos\\OrderProcessAPI\\OrderProcecssingAPI.Business\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\me_ri\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "C:\\Users\\me_ri\\source\\repos\\OrderProcessAPI\\OrderProcessingAPI.Core\\OrderProcessingAPI.Core.csproj": {
+                "projectPath": "C:\\Users\\me_ri\\source\\repos\\OrderProcessAPI\\OrderProcessingAPI.Core\\OrderProcessingAPI.Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\me_ri\\source\\repos\\OrderProcessAPI\\OrderProcessingAPI.Core\\OrderProcessingAPI.Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\me_ri\\source\\repos\\OrderProcessAPI\\OrderProcessingAPI.Core\\OrderProcessingAPI.Core.csproj",
+        "projectName": "OrderProcessingAPI.Core",
+        "projectPath": "C:\\Users\\me_ri\\source\\repos\\OrderProcessAPI\\OrderProcessingAPI.Core\\OrderProcessingAPI.Core.csproj",
+        "packagesPath": "C:\\Users\\me_ri\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\me_ri\\source\\repos\\OrderProcessAPI\\OrderProcessingAPI.Core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\me_ri\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -37,10 +93,129 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\me_ri\\source\\repos\\OrderProcessAPI\\OrderProcessingAPI.Service\\OrderProcessingAPI.Service.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\me_ri\\source\\repos\\OrderProcessAPI\\OrderProcessingAPI.Service\\OrderProcessingAPI.Service.csproj",
+        "projectName": "OrderProcessingAPI.Service",
+        "projectPath": "C:\\Users\\me_ri\\source\\repos\\OrderProcessAPI\\OrderProcessingAPI.Service\\OrderProcessingAPI.Service.csproj",
+        "packagesPath": "C:\\Users\\me_ri\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\me_ri\\source\\repos\\OrderProcessAPI\\OrderProcessingAPI.Service\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\me_ri\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "C:\\Users\\me_ri\\source\\repos\\OrderProcessAPI\\OrderProcessingAPI.Core\\OrderProcessingAPI.Core.csproj": {
+                "projectPath": "C:\\Users\\me_ri\\source\\repos\\OrderProcessAPI\\OrderProcessingAPI.Core\\OrderProcessingAPI.Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\me_ri\\source\\repos\\OrderProcessAPI\\OrderProcessingAPI.Test\\OrderProcessingAPI.Test.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\me_ri\\source\\repos\\OrderProcessAPI\\OrderProcessingAPI.Test\\OrderProcessingAPI.Test.csproj",
+        "projectName": "OrderProcessingAPI.Test",
+        "projectPath": "C:\\Users\\me_ri\\source\\repos\\OrderProcessAPI\\OrderProcessingAPI.Test\\OrderProcessingAPI.Test.csproj",
+        "packagesPath": "C:\\Users\\me_ri\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\me_ri\\source\\repos\\OrderProcessAPI\\OrderProcessingAPI.Test\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\me_ri\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "C:\\Users\\me_ri\\source\\repos\\OrderProcessAPI\\OrderProcessingAPI.Service\\OrderProcessingAPI.Service.csproj": {
+                "projectPath": "C:\\Users\\me_ri\\source\\repos\\OrderProcessAPI\\OrderProcessingAPI.Service\\OrderProcessingAPI.Service.csproj"
+              },
+              "C:\\Users\\me_ri\\source\\repos\\OrderProcessAPI\\OrderProcessingAPI\\OrderProcessingAPI.csproj": {
+                "projectPath": "C:\\Users\\me_ri\\source\\repos\\OrderProcessAPI\\OrderProcessingAPI\\OrderProcessingAPI.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
           "dependencies": {
             "Microsoft.NET.Test.Sdk": {
               "target": "Package",
               "version": "[16.5.0, )"
+            },
+            "Moq": {
+              "target": "Package",
+              "version": "[4.14.5, )"
             },
             "coverlet.collector": {
               "target": "Package",
@@ -70,6 +245,80 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\me_ri\\source\\repos\\OrderProcessAPI\\OrderProcessingAPI\\OrderProcessingAPI.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\me_ri\\source\\repos\\OrderProcessAPI\\OrderProcessingAPI\\OrderProcessingAPI.csproj",
+        "projectName": "OrderProcessingAPI",
+        "projectPath": "C:\\Users\\me_ri\\source\\repos\\OrderProcessAPI\\OrderProcessingAPI\\OrderProcessingAPI.csproj",
+        "packagesPath": "C:\\Users\\me_ri\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\me_ri\\source\\repos\\OrderProcessAPI\\OrderProcessingAPI\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\me_ri\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "C:\\Users\\me_ri\\source\\repos\\OrderProcessAPI\\OrderProcecssingAPI.Business\\OrderProcecssingAPI.Processor.csproj": {
+                "projectPath": "C:\\Users\\me_ri\\source\\repos\\OrderProcessAPI\\OrderProcecssingAPI.Business\\OrderProcecssingAPI.Processor.csproj"
+              },
+              "C:\\Users\\me_ri\\source\\repos\\OrderProcessAPI\\OrderProcessingAPI.Core\\OrderProcessingAPI.Core.csproj": {
+                "projectPath": "C:\\Users\\me_ri\\source\\repos\\OrderProcessAPI\\OrderProcessingAPI.Core\\OrderProcessingAPI.Core.csproj"
+              },
+              "C:\\Users\\me_ri\\source\\repos\\OrderProcessAPI\\OrderProcessingAPI.Service\\OrderProcessingAPI.Service.csproj": {
+                "projectPath": "C:\\Users\\me_ri\\source\\repos\\OrderProcessAPI\\OrderProcessingAPI.Service\\OrderProcessingAPI.Service.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[5.5.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
